@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0 auto;
+    width: 1280px;
+}
+
+header {
+    padding: 30px 40px 30px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #fff;
+    z-index: 100;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 35px;
+    align-items: center;
+    height: 60px;
+}
+
+li {
+    list-style: none;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    line-height: 160%;
+    color: #545454;
+    padding-bottom: 3px;
+}
+
+li:nth-child(2) {
+    border-bottom: #F1CDB3 solid 3px;
+}
+
+li:hover {
+    border-bottom: #F1CDB3 solid 3px;
+    cursor: pointer;
+}
+
+a, li a {
+    text-decoration: none;
+    color: #545454;
+}
+
+.title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.subtitle {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #292929;
+    margin-top: 10px;
+}
+
+main h2 {
+    text-align: center;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+main {
+    margin: 80px 40px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 60px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: 30px;
+    column-gap: 40px;
+}
+
+.petCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 435px;
+    width: 270px;
+    box-sizing: border-box;
+}
+
+.petCard button {
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    background: #fff;
+    padding: 15px 45px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 99;
+}
+
+.cards :hover {
+    cursor: pointer; 
+}
+
+.cards :hover button {
+    cursor: pointer;
+    background: #FDDCC4;
+}
+
+.overlay {
+    display: none;
+    position: absolute;
+    z-index: 98;
+    height: 435px;
+    width: 270px;
+    border-radius: 2%;
+}
+
+.petCard:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, 0.2);
+   }
+
+.petCard p {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #545454;
+    letter-spacing: 0.06em;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 340px;
+    height: 52px;
+    text-align: center;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+
+.navigation button {
+    border-radius: 100%;
+    width: 52px;
+    height: 52px;
+}
+
+.left {
+    border: 2px solid #CDCDCD;
+}
+
+.right {
+    border: 2px solid #F1CDB3;
+}
+
+.right:hover {
+    cursor: pointer;
+    background: #FDDCC4;
+}
+
+.currentPage {
+    background: #F1CDB3;
+    border: 0px;
+}
+
+footer {
+    padding: 40px 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 160px;
+    background: url(/assets/imges/footer-background.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    linear-gradient(0deg, #211F20, #211F20);
+    background-size: cover;
+    
+}
+
+footer h3 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #fff;
+}
+
+footer p {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+}
+
+.contactsInf, .location {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 234px;
+    margin-top: 16px;
+}
+
+.email, .phone, .locBoston, .locLondon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 20px;
+}
