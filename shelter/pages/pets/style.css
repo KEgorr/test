@@ -214,7 +214,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     column-gap: 160px;
-    background: url(/assets/imges/footer-background.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    background: url(../../assets/imges/footer-background.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
     linear-gradient(0deg, #211F20, #211F20);
     background-size: cover;
     
